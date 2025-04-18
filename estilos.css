@@ -1,5 +1,5 @@
 /* Importar fuente Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* HEADER */
 header {
     background-color: #0a0f2c;
     color: white;
@@ -48,50 +49,105 @@ nav ul li a:hover {
     color: #d4af37; /* Dorado suave */
 }
 
+/* HERO SECTION */
 .hero {
-    background: url('https://images.unsplash.com/photo-1618386594303-f90f2c721b3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-    color: white;
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1607082350920-96a452ecb437?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 150px 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.5); /* Azul translúcido */
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.2em;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 30px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #0a0f2c;
+.botones-hero {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-solid {
+    background-color: #007bff;
     color: white;
-    padding: 12px 30px;
+    padding: 15px 30px;
+    border-radius: 30px;
     text-decoration: none;
-    font-weight: 500;
-    border-radius: 25px;
-    transition: background-color 0.3s;
+    font-weight: 600;
+    transition: background 0.3s;
 }
 
-.btn:hover {
-    background-color: #d4af37;
-    color: #0a0f2c;
+.btn-solid:hover {
+    background-color: #0056b3;
 }
 
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+/* SECCIONES */
 .seccion {
-    padding: 100px 20px;
+    padding: 120px 20px;
     max-width: 1200px;
     margin: auto;
     text-align: center;
 }
 
 .seccion h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.seccion h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 
 .seccion p {
@@ -99,6 +155,7 @@ nav ul li a:hover {
     margin: auto;
 }
 
+/* SERVICIOS */
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -118,11 +175,12 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
+/* GALERÍA */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
     justify-content: center;
 }
 
@@ -138,7 +196,12 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+/* CONTACTO */
 .contacto form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 40px auto;
     display: flex;
@@ -150,6 +213,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    font-size: 1em;
 }
 
 .contacto button {
@@ -169,6 +233,7 @@ nav ul li a:hover {
     color: #0a0f2c;
 }
 
+/* FOOTER */
 footer {
     background: #0a0f2c;
     color: #bbb;
@@ -176,54 +241,5 @@ footer {
     padding: 20px;
     margin-top: 60px;
     font-size: 0.9em;
-}
-/* Mejoras Premium */
-
-/* Títulos de sección */
-.seccion h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    font-weight: 700;
-    position: relative;
-    display: inline-block;
-}
-
-.seccion h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #d4af37;
-    margin: 15px auto 0;
-    border-radius: 2px;
-}
-
-/* Separación entre secciones */
-.seccion {
-    padding: 120px 20px;
-}
-
-/* Botón principal */
-.btn {
-    padding: 15px 40px;
-    font-size: 1.1em;
-    border-radius: 30px;
-}
-
-/* Formulario de contacto */
-.contacto form {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.contacto input, .contacto textarea {
-    font-size: 1em;
-}
-
-/* Galería de imágenes */
-.galeria {
-    margin-top: 60px;
 }
 
