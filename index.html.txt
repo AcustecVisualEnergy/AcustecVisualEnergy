@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acustec Visual Energy</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Acustec Visual Energy</div>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#oficinas">Oficinas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <h1>Soluciones Integrales en Audio, Video e Iluminación</h1>
+    <p>Diseñamos experiencias audiovisuales de alto impacto para tus espacios.</p>
+</section>
+
+<section id="quienes-somos" class="seccion">
+    <h2>Quiénes Somos</h2>
+    <p>Acustec Visual Energy es una compañía líder en integración tecnológica audiovisual con presencia en Colombia, México y Miami. Nos especializamos en el diseño, instalación y puesta en marcha de soluciones de audio, video e iluminación, adaptadas a las necesidades de cada cliente.</p>
+</section>
+
+<section id="servicios" class="seccion">
+    <h2>Servicios</h2>
+    <ul class="servicios">
+        <li>Integración de sistemas audiovisuales</li>
+        <li>Instalación de audio profesional</li>
+        <li>Sistemas de videowall y pantallas LED</li>
+        <li>Iluminación arquitectónica y teatral</li>
+        <li>Automatización de espacios</li>
+        <li>Asesoría y soporte técnico</li>
+    </ul>
+</section>
+
+<section id="proyectos" class="seccion">
+    <h2>Proyectos</h2>
+    <div class="galeria">
+        <img src="https://source.unsplash.com/400x300/?audio" alt="Proyecto de audio">
+        <img src="https://source.unsplash.com/400x300/?video" alt="Proyecto de video">
+        <img src="https://source.unsplash.com/400x300/?lighting" alt="Proyecto de iluminación">
+    </div>
+</section>
+
+<section id="oficinas" class="seccion">
+    <h2>Oficinas</h2>
+    <ul class="oficinas">
+        <li><strong>Colombia:</strong> Bogotá</li>
+        <li><strong>México:</strong> Ciudad de México</li>
+        <li><strong>Estados Unidos:</strong> Miami, Florida</li>
+    </ul>
+</section>
+
+<section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+    <form action="mailto:contacto@acustecvisualenergy.com" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Acustec Visual Energy. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
