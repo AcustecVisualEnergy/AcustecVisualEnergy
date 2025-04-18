@@ -177,3 +177,53 @@ footer {
     margin-top: 60px;
     font-size: 0.9em;
 }
+/* Mejoras Premium */
+
+/* Títulos de sección */
+.seccion h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.seccion h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d4af37;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Separación entre secciones */
+.seccion {
+    padding: 120px 20px;
+}
+
+/* Botón principal */
+.btn {
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border-radius: 30px;
+}
+
+/* Formulario de contacto */
+.contacto form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contacto input, .contacto textarea {
+    font-size: 1em;
+}
+
+/* Galería de imágenes */
+.galeria {
+    margin-top: 60px;
+}
+
