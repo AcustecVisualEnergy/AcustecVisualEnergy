@@ -54,3 +54,18 @@ nav ul li a:hover {
     position: relative;
     height: 100vh;
     background: url('https://images.unsplash.com/photo-1607082350920-96a452ecb437?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')
+    .hero-gallery {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 0; /* Debajo del texto */
+}
+
+.hero-gallery img {
+    width: 33.33%;
+    height: 200px;
+    object-fit: cover;
+}
+
