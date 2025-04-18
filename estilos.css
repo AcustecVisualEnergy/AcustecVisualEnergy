@@ -1,4 +1,5 @@
 /* Importar fuente Poppins */
+/* Importar fuente Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 html {
@@ -46,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #d4af37; /* Dorado suave */
+    color: #d4af37;
 }
 
 /* HERO SECTION */
@@ -66,11 +67,10 @@ nav ul li a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 123, 255, 0.5); /* Azul translúcido */
+    background: rgba(0, 123, 255, 0.5);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     z-index: 1;
 }
-
 
 .hero-content {
     position: relative;
@@ -96,21 +96,8 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.btn-solid {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s;
-}
-
-.btn-solid:hover {
-    background-color: #0056b3;
-}
-
-..btn-outline {
+/* Botones corregidos */
+.btn-solid, .btn-outline {
     background-color: #007bff;
     color: white;
     padding: 15px 30px;
@@ -118,10 +105,11 @@ nav ul li a:hover {
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
+    display: inline-block;
 }
 
-.btn-outline:hover {
+.btn-solid:hover, .btn-outline:hover {
     background-color: #0056b3;
 }
 
@@ -243,4 +231,3 @@ footer {
     margin-top: 60px;
     font-size: 0.9em;
 }
-
