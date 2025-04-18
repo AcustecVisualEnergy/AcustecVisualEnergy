@@ -10,70 +10,85 @@
 
 <header>
     <div class="logo">Acustec Visual Energy</div>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#oficinas">Oficinas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section class="hero">
+<section id="inicio" class="hero">
+    <div class="overlay"></div>
     <div class="hero-content">
-        <h1>Integración Tecnológica Audiovisual</h1>
+        <h1>Soluciones Audiovisuales de Alto Impacto</h1>
+        <p>Transformamos espacios comerciales, corporativos y residenciales a través de la integración de audio, video e iluminación de vanguardia.</p>
+        <div class="botones-hero">
+            <a href="#contacto" class="btn-solid">Contáctanos</a>
+            <a href="#servicios" class="btn-outline">Nuestros Servicios</a>
+        </div>
     </div>
 </section>
 
-<section class="categorias">
-    <div class="categoria">
-        <img src="img/Audio1.jpg" alt="Audio">
-        <h2>Audio Profesional</h2>
-    </div>
-    <div class="categoria">
-        <img src="img/Video1.jpg" alt="Video">
-        <h2>Video Corporativo</h2>
-    </div>
-    <div class="categoria">
-        <img src="img/Iluminacion1.jpg" alt="Iluminación">
-        <h2>Iluminación Arquitectónica</h2>
-    </div>
-</section>
-
-<section class="quienes-somos">
+<section id="quienes-somos" class="seccion">
     <h2>Quiénes Somos</h2>
-    <p>En Acustec Visual Energy transformamos espacios comerciales, corporativos y residenciales a través de soluciones integradas de audio, video e iluminación de vanguardia en Colombia, México y Estados Unidos.</p>
+    <p>En Acustec Visual Energy, impulsamos la innovación tecnológica audiovisual con soluciones adaptadas a cada proyecto. Desde nuestras oficinas en Colombia, México y Miami, desarrollamos espacios que conectan personas a través de la tecnología.</p>
 </section>
 
-<section class="proyectos">
+<section id="servicios" class="seccion">
+    <h2>Servicios</h2>
+    <div class="servicios-grid">
+        <div class="servicio">Diseño e Instalación de Sistemas de Audio Profesional</div>
+        <div class="servicio">Integración de Videowalls y Pantallas LED</div>
+        <div class="servicio">Automatización de Espacios Inteligentes</div>
+        <div class="servicio">Iluminación Arquitectónica y Theatrical</div>
+        <div class="servicio">Asesoría y Soporte Técnico Especializado</div>
+        <div class="servicio">Marcas líderes: Bose, Shure, Crestron, Extron</div>
+    </div>
+</section>
+
+<section id="proyectos" class="seccion">
     <h2>Proyectos Destacados</h2>
     <div class="galeria">
-        <!-- Audio -->
-        <img src="img/Audio2.jpg" alt="Proyecto Audio">
-        <img src="img/Audio3.jpg" alt="Proyecto Audio">
-        <img src="img/Audio4.jpg" alt="Proyecto Audio">
-        <img src="img/Audio5.jpg" alt="Proyecto Audio">
-
-        <!-- Video -->
-        <img src="img/Video2.jpg" alt="Proyecto Video">
-        <img src="img/Video3.jpg" alt="Proyecto Video">
-        <img src="img/Video4.jpg" alt="Proyecto Video">
-        <img src="img/Video5.jpg" alt="Proyecto Video">
-
-        <!-- Iluminación -->
-        <img src="img/Iluminacion2.jpg" alt="Proyecto Iluminación">
-        <img src="img/Iluminacion3.jpg" alt="Proyecto Iluminación">
-        <img src="img/Iluminacion4.jpg" alt="Proyecto Iluminación">
-        <img src="img/Iluminacion5.jpg" alt="Proyecto Iluminación">
+        <img src="img/Audio1.jpg" alt="Audio 1">
+        <img src="img/Audio2.jpg" alt="Audio 2">
+        <img src="img/Audio3.jpg" alt="Audio 3">
+        <img src="img/Audio4.jpg" alt="Audio 4">
+        <img src="img/Audio5.jpg" alt="Audio 5">
+        <img src="img/Video1.jpg" alt="Video 1">
+        <img src="img/Video2.jpg" alt="Video 2">
+        <img src="img/Video3.jpg" alt="Video 3">
+        <img src="img/Video4.jpg" alt="Video 4">
+        <img src="img/Video5.jpg" alt="Video 5">
+        <img src="img/Iluminacion1.jpg" alt="Iluminación 1">
+        <img src="img/Iluminacion2.jpg" alt="Iluminación 2">
+        <img src="img/Iluminacion3.jpg" alt="Iluminación 3">
+        <img src="img/Iluminacion4.jpg" alt="Iluminación 4">
+        <img src="img/Iluminacion5.jpg" alt="Iluminación 5">
     </div>
 </section>
 
-<section class="contacto">
+<section id="oficinas" class="seccion">
+    <h2>Oficinas</h2>
+    <p>Colombia — Bogotá | México — Ciudad de México | Estados Unidos — Miami, FL</p>
+</section>
+
+<section id="contacto" class="seccion contacto">
     <h2>Contacto</h2>
     <form action="mailto:contacto@acustecvisualenergy.com" method="post" enctype="text/plain">
-        <input type="text" name="nombre" placeholder="Nombre" required>
-        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo" required>
         <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar Mensaje</button>
     </form>
 </section>
 
 <footer>
-    <p>Colombia | México | Miami</p>
-    <p>&copy; 2025 Acustec Visual Energy</p>
+    <p>&copy; 2025 Acustec Visual Energy. Todos los derechos reservados.</p>
 </footer>
 
 </body>
